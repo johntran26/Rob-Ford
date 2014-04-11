@@ -1,0 +1,309 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	color: #fff;
+}
+
+@font-face {
+	font-family: Langdon;
+	src: url(Langdon.otf);
+}
+
+.arrow {
+	width: 50px;
+	height: 25px;
+	position: absolute;
+	bottom: 10px;
+	right: 0px;
+	background-image: url(arrow.png);
+}
+
+.collapsed {
+	height: 80px;
+	overflow: hidden;
+}
+
+.expanded {
+	height: auto;
+}
+.content{
+	width: 100%;
+	height: auto;
+	margin-top: 40px;
+	text-align: left;
+	color:#333;
+	text-align:left;
+	padding-right:15px;
+	padding-left:15px;
+	padding-top:5px;
+	line-height:125%;
+	font-size:.95em;
+	padding-bottom:20px;
+}
+#container{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 10px;
+	position: relative;	
+}
+
+#head {
+	width: 100%;
+	height: 200px;
+	background: #fff;
+	margin-bottom: 10px;
+	position: relative;
+	background: #487fbc;
+	//text-align: center;
+}
+
+#headpic {
+	background-image: url(header330.svg);
+	background-repeat:no-repeat;
+	width:330px;
+	height:200px;
+	//height:200px;
+	margin:0 auto;
+}
+
+
+
+#about {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+	position: relative;
+	background: #5e5d5d;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	padding: 10px;
+	padding-bottom:25px;
+	text-align:center;
+}
+
+about, p{
+	//border:1px red solid;
+	text-align:left;
+	padding-right:10px;
+	padding-left:15px;
+	padding-top:5px;
+	line-height:125%;
+	font-size:.95em;
+
+}
+
+.sectionhead{
+	font-family: Langdon, sans-serif;
+	font-size: 2.1em;
+	color: #fff;
+	padding-top:10px;
+	
+}
+
+#contact {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+	position: relative;
+	background: #5e5d5d;
+	font-family: 'Open Sans', sans-serif;
+	padding: 10px;
+	text-align:center;
+}
+
+contact, p{
+	//border:1px red solid;
+	text-align:left;
+	padding-right:15px;
+	padding-left:15px;
+	padding-top:5px;
+	line-height:125%;
+	font-size:.95em;
+	font-weight:bold;
+}
+
+
+#results {
+	width: 100%;
+	position: relative;
+	margin-bottom: 10px;
+	background:  #8b070a;
+	padding: 10px;
+	text-align:center;
+}
+
+#survey {
+	width: 100%;
+	background: #fff;
+	position: relative;
+	margin-bottom: 10px;
+	background: #edc91f;
+	padding: 10px;
+	text-align:center;
+}
+
+#promises {
+	width: 100%;
+	position: relative;
+	margin-bottom: 10px;
+	background: #edc91f;
+	padding: 10px;
+	text-align:center;
+	padding-bottom:55px;
+}
+
+#attendance {
+	width: 100%;
+	position: relative;
+	margin-bottom: 10px;
+	background: #5e5d5d;
+	padding: 10px;
+	text-align:center;
+}
+
+#wardmap {
+	width: 100%;
+	position: relative;
+	margin-bottom: 10px;
+	background: #5e5d5d;
+	padding: 10px;
+	text-align:center;
+}
+
+#map {
+	width: 100%;
+	text-align: center;
+}
+
+#map img {
+	width: 100%;
+	height: auto;
+}
+
+#timeline {
+	width: 100%;
+	position: relative;
+	margin-bottom: 10px;
+	background:  #8b070a;
+	padding: 10px;
+	text-align:center;
+}
+
+.timelineContainer {
+	margin-top: 30px;
+	line-height: 2em;
+	text-align: left;
+	padding-left:15px;
+
+}
+
+.timelineEvent {
+	line-height: 1.5em;
+	margin-top: 10px;
+}
+
+.year {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+dt {
+	line-height: 1em;
+	margin-bottom: 10px;
+}
+
+
+#bio {
+	width: 100%;
+	position: relative;
+	margin-bottom: 10px;
+	background: #ecebe5;
+	padding: 10px;
+	background: #487fbc;
+	text-align:center;
+}
+
+#media {
+	width: 100%;
+	position: relative;
+	margin-bottom: 10px;
+	background: #5e5d5d;
+	padding: 10px;
+	color:white;
+	text-align:center;
+}
+
+#sm {
+	width: 100%;
+	position: relative;
+	margin-bottom: 10px;
+	background: #5e5d5d;
+	padding: 10px;
+	color:white;
+	text-align:center;
+
+}
+
+#adspace {
+	width: 100%;
+	height: 100px;
+	background: #fff;
+	position: relative;
+}

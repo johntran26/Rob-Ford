@@ -1,0 +1,608 @@
+<!doctype html>
+<html>
+	<head>
+		<title>The Truth About Rob Ford</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="mediaqueries.css" />
+
+		
+		<link rel="stylesheet" href="inc/colorbox.css" type="text/css" media="screen">
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+		
+
+		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="inc/colorbox.js"></script>
+		<script type="text/javascript" src="js/timeliner.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/TweenMax.min.js"></script>
+		<script src="script.js"></script>
+		<script type="text/javascript" src="js/jquery.donutchart.js"></script>
+		<script src="js/jquery.collapse.js"></script>
+	</head>
+	
+	<body onload="onload()">
+		<div id="container">
+			<div id="head">
+				
+				<div id="headpic">
+				</div>	
+				
+			</div>
+			
+			<div id="head2">
+				
+				<div id="headpic2">
+				</div>	
+				
+			</div>
+			
+			
+			<div id="about">
+				<div class="sectionhead">
+					ABOUT  THIS  SITE
+				</div>
+				</br>
+			
+				<p>Rarely does the mayor of a city become a global celebrity. 
+				Mayor Rob Ford has received so much publicity and attention, it 
+				is easy to lose track of the issues that matter most to Torontonians. 
+				This website aims to provide nothing but facts, from an unbiased 
+				perspective, to help Toronto's voters form their own opinions about 
+				Rob Ford.</p> 
+
+			</div>
+			
+			
+			<div id="contact">
+				<div class="sectionhead" id="contacthead">
+					SOCIAL THINGS
+				</div>
+				<p>
+					@twitterguys?<br/>
+					@twitterguys?<br/>
+					@twitterguys?<br/>
+					@twitterguys?<br/>
+				</p>
+			</div>
+			
+			
+			<div class="collapsed" id="results">
+				<div class="sectionhead" id="resultshead">	
+					OUR SURVEY RESULTS
+				</div>
+				
+				<div class="content">
+				</div>
+			
+				<div class="arrow" id="resultsarrow">
+				</div>
+			</div>
+			
+			
+			<div class="collapsed" id="survey">
+				<div class="sectionhead" id="surveyhead" style="color:#333;">
+					TAKE THIS SURVEY SON!
+				</div>
+				
+				<div class="content">
+				</div>
+				
+				<div class="arrow" id="surveyarrow">
+				</div>
+			</div>
+			
+			
+			<div class="collapsed" id="promises">
+				<div class="sectionhead" id="promiseshead" style="color:#333;">
+					2010 CAMPAIGN PROMISES SCORECARD
+				</div>
+				
+				<div class="content">
+				<span class="year">Overall Completion Score: 24%</span>
+				<br/>
+				<br/>
+				<span class="year">Categorical Summary:</span>
+				<br/>
+				<br/>
+				<span class="year">Transit:</span> 0-1%
+				<br/>
+				
+				<div>
+					<h3>Promises Made / Delivered:</h3><br/><div id="donutchart1" data-percent="0" class="centerAlignPie"></div><br/>
+					Complete Sheppard Ave. line <p>NO</p><br> 
+					Extend Bloor-Danforth to Scarborough Town Center / <p>NO</p><br> 
+					Replace streetcars with buses / <p>NO</p><br>
+					TTC fares- implement smart fare cards / <p>NO</p><br>
+				</div>
+				<br/>
+				<span class="year">City Hall:</span> 13%
+				<br/>
+				<div>
+					
+					<h3>Promises Made / Delivered</h3><br/><div id="donutchart2" data-percent="13" class="centerAlignPie"></div><br/>
+					Reduce size of city council to 22 + mayor (current 44 councillors), total 23 / <p>NO</p><br>
+					Reduce staff for City of Toronto (3%/yr for 4 yrs) / <p>NO</p><br>
+					Create Saving our City program / <p>NO</p><br>
+					Phase-in private garbage collection across city / <p>PARTIAL</p><br>
+				</div>
+				<br/>
+				<span class="year">Budget:</span> 50%
+				<br/>
+				<div>
+					
+					<h3>Promises Made / Delivered</h3><br/><div id="donutchart3" data-percent="50" class="centerAlignPie"></div><br/>
+					Reduce city operating budget (1.7 billion over 4 years) / <p>NO</p><br>
+					Reduce individual councillor expense budgets / <p>YES</p><br>
+					Reduce individual councillor staffing budgets / <p>NO</p><br>
+					Reduce Office of the Mayor's office budget by 20% / <p>YES</p><br>
+				</div>
+				<br/>
+				<span class="year">Transportation:</span> 27%
+				<div>
+					<h3>Promises Made / Delivered</h3><br/><div id="donutchart4" data-percent="27" class="centerAlignPie"></div><br/>
+					Eliminate Vehicle Registration Tax / <p>YES</p><br>
+					Maintained major HWYs without tolls / <p>YES</p><br>
+					Clear-up $250 million in road repair / <p>NO</p><br>
+					Synchronize traffic signals - SCOOT on all signals / <p>NO</p><br>
+					Critical road improvements / <p>NO</p><br>
+					Parking rules easier to understand, color-code curbs for parking times / <p>NO</p><br>
+					Create Central Roadwork Coordination Center / <p>NO</p><br>
+					Require more work to be done at night / <p>NO</p><br>
+					Build comprehensive network of bicycle trails (100 KM off-road bicycle) / <p>PARTIAL</p><br>
+					Build 100 KM trails for pedestrians, beside bike trails for cyclists / <p>PARTIAL</p><br>
+					Create critical on-road bike lanes / <p>NO</p><br>
+				</div>	
+				<br>
+					<p style="padding-left:0;">This is not an exhaustive list, it is a compilation of the most popular promises made by Rob Ford in 2010.<br>
+					Sources: Rob Ford Mayoral Documents (Saving Our City, and the Transportation Plan)<br>
+					Sources Cont.: "Deconstructing Mayor Rob Ford's fiscal record" via <a href="http://www.thestar.com/yourtoronto/robford/2013/11/08/deconstructing_mayor_rob_fords_fiscal_record.html" target="_blank">The Toronto Star</a>, Daniel Dale. Nov 08 2013 </p>
+					<!-- _______JS_______-->
+					  <script>
+						$("#donutchart1").donutchart({'size': 150 });
+						$("#donutchart1").donutchart("animate");
+
+						$("#donutchart2").donutchart({'size': 150 });
+						$("#donutchart2").donutchart("animate");
+
+						$("#donutchart3").donutchart({'size': 150 });
+						$("#donutchart3").donutchart("animate");
+
+						$("#donutchart4").donutchart({'size': 150 });
+						$("#donutchart4").donutchart("animate");
+					  </script>
+				</div>
+				
+				<div class="arrow" id="promisesarrow">
+				</div>
+			</div>
+			
+			
+			<div class="collapsed" id="attendance">
+				<div class="sectionhead" id="attendancehead">
+					VOTING ATTENDANCE RECORD
+				</div>
+
+				<div class="content" style="color:white;">
+				From December 1, 2010 - March 31, 2014 Rob Ford has an attendance record of 428/525 (82%) at City Hall voting sessions.
+				</div>
+				
+				<div class="arrow" id="attendancearrow">
+				</div>
+			</div>
+			
+			
+			<div class="collapsed" id="wardmap">
+				<div class="sectionhead" id="wardhead">
+					MAP OF FORD'S WARDS
+				</div>
+				
+				<div class="content" style="color:white;">
+				Blue represents wards which voted for Ford in the 2010 election, white represents those which voted otherwise.
+				<br/>
+				<br/>
+					<div id="map">
+						<img src="wardmap.png">
+					</div>
+				</div>
+			
+				
+				
+				<div class="arrow" id="wardarrow">
+				</div>
+			</div>
+			
+			
+			<div class="collapsed" id="timeline">
+				<div class="sectionhead" id="timelinehead">
+					THE ROB FORD TIMELINE (1997 - TODAY)
+				</div>
+				
+				<div id="timelineContainer" class="timelineContainer"> <!-- main container -->
+				
+					<div class="timelineToggle"><p><a class="expandAll">+ expand all</a></p></div>
+					  <div class="timelineMajor">
+						<h2 class="timelineMajorMarker"><span class="year">2014-2010</span></h2>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20141"><a><span class="year">2014 - April 17:</span> Rob Ford's official campaign launches </a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20141EX" style="display: none;">
+							  <p>Toronto Mayor Rob Ford to officially kick off his re-election campaign on April 17th (start time: 6:30 PM) in Etobicoke, at the Toronto Congress Centre. </p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20141"><a><span class="year">2014 - January:</span> Rob Ford registers for 2014 election </a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20141EX" style="display: none;">
+							  <p>Rob Ford was the first candidate to file his bid for the 2014 mayoral election . The bid came on the first day the clerk's office opened and began accepting candidate applications.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="201312"><a><span class="year">2013 - November:</span> Rob Ford stripped of mayoral powers </a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="201312EX" style="display: none;">
+							  <p>Toronto city council approved transfer of a significant amount of the mayoral office's powers and budget.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="201312"><a><span class="year">2013 - November:</span> Rob Ford stripped of mayoral powers </a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="201312EX" style="display: none;">
+							  <p>Toronto city council approved transfer of a significant amount of the mayoral office's powers and budget.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="201310"><a><span class="year">2013 - November:</span> Rob Ford admits to illicit drug use</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="201310EX" style="display: none;">
+							  <p>Ford admitted that he smoked crack cocaine, about a year earlier while in one of his "drunken stupors." But he once again denies he is an addict. He adds he does not recall there being any video and wasn't lying when he suggested the video didn't exist because reporters had not asked the right question.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="201311"><a><span class="year">2013 - October:</span> Toronto Police confirm existence of Gawker video</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="201311EX" style="display: none;">
+							  <p>Chief Bill Blair announces Toronto police recovered a copy of a video file that depicts images of Ford "consistent with those previously reported in the press". Ford was never charged, but Lisi was faced additional charge of extortion.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20139"><a><span class="year">2013 - October:</span> Toronto Police confirm existence of Gawker video</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20139EX" style="display: none;">
+							  <p>Chief Bill Blair announces Toronto police recovered a copy of a video file that depicts images of Ford "consistent with those previously reported in the press". Ford was never charged, but Lisi was faced additional charge of extortion.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20138"><a><span class="year">2013 - October:</span> Ford's friend Alexander Lisi arrested</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20138EX" style="display: none;">
+							  <p>Alexander Lisi was arrested on drug-related charges, including drug trafficking. Rob Ford defends his friend, stating he is a "good guy". Police release documents stating the alleged Rob Ford crack video lead to dozens of arrests. The documents also point to the concerns of city staffers regarding Lisi's negative influence on the Mayor. A judge released Rob Ford's character reference for Lisi, written following Lisi's conviction of threatening to kill a woman.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20137"><a><span class="year">2013 - October:</span> Ford's friend occasional driver, Alexander Lisi arrested</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20137EX" style="display: none;">
+							  <p>Alexander Lisi was arrested on drug-related charges, including drug trafficking. Rob Ford defends his friend, stating he is a "good guy". Police release documents stating the alleged Rob Ford crack video lead to dozens of arrests. The documents also point to the concerns of city staffers regarding Lisi's negative influence on the Mayor. </p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20136"><a><span class="year">2013 - October:</span> Ford's friend Alexander Lisi arrested</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20136EX" style="display: none;">
+							  <p>Alexander Lisi was arrested on drug-related charges, including drug trafficking. Rob Ford defends his friend, stating he is a "good guy". Police release documents stating the alleged Rob Ford crack video lead to dozens of arrests. The documents also point to the concerns of city staffers regarding Lisi's negative influence on the Mayor. </p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20135"><a><span class="year">2013 - October:</span> Ford's friend Alexander Lisi arrested</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20135EX" style="display: none;">
+							  <p>Alexander Lisi was arrested on drug-related charges, including drug trafficking. Rob Ford defends his friend, stating he is a "good guy". Police release documents stating the alleged Rob Ford crack video lead to dozens of arrests. The documents also point to the concerns of city staffers regarding Lisi's negative influence on the Mayor. </p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20134"><a><span class="year">2013 - August:</span> Videos of an intoxicated Rob Ford surface</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20134EX" style="display: none;">
+							  <p>TEST 2 </p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20133"><a><span class="year">2013 - May:</span> Alleged video of Rob Ford smoking crack surfaces</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20133EX" style="display: none;">
+							  <p>Toronto Star employees are approached and watch a video of Rob Ford allegedly smoking crack cocaine. The news story is picked-up by US site Gawker, and 200K is raised to buy the video.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20132"><a><span class="year">2013 - May:</span> Ford's Chief of Staff fired</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20132EX" style="display: none;">
+							  <p>Mayor Rob Ford fires his chief of staff, Mark Towhey. Towhey was Ford’s senior policy advisor during the 2010 campaign.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20131"><a><span class="year">2013:</span> Rob Ford stays on as Mayor</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20131EX" style="display: none;">
+							  <p>Ontario Divisional Court Justice Gladys Pardu ruled in favour of Rob Fords appeal to Ontario Superior Court Judge Charles Hackland verdict.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20124"><a><span class="year">2012:</span> Rob Ford found guilty in conflict of interest case</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20124EX" style="display: none;">
+							  <p>Ontario Superior Court Judge Charles Hackland issued a guilty verdict, that found Rob Ford guilty of breaching the conflict of interest regulations,Judge Huckland gave Rob Ford two weeks to vacate his seat on city council. Rob Ford commented that he would fight the verdict.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20123"><a><span class="year">2012:</span> Allegations of staff misuse</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20123EX" style="display: none;">
+							  <p>The Globe and Mail reported on that Ford may have used at least two city hall staff members to help run two summer football teams.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20122"><a><span class="year">2012:</span> Elimination of plastic bag fee*</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20122EX" style="display: none;">
+							  <p>The council led by Rob Ford, vote to eliminates the plastic bag fee, which was put in place as as part of an eco-program to help cut-down on the use of plastic bags.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20121"><a><span class="year">2012:</span> Application to remove Rob Ford from office</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20121EX" style="display: none;">
+							  <p>The application filed in 2012, dates back to the issue of the City of Toronto's Integrity Commissioner Janet Leiper ruling: Councillor Rob Ford violated City Council's Code of Conduct. Following the ruling, Ford then participated in a council debate to discuss dropping the case against him. Lawyer Clayton Ruby filed the application for removal under the charge that, Rob Ford's participation in the original debate, violated the Municipal Conflict of Interest Act.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20112"><a><span class="year">2011:</span> Private garbage*</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20112EX" style="display: none;">
+							  <p>City awards private garbage collection to GFL Environmental East Corporation, services to start in 2012 west of Yonge Street</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20111"><a><span class="year">2011:</span> Jarvis bike-lanes*</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20111EX" style="display: none;">
+							  <p>Council supports Rob Ford's plan to remove the Jarvis bike lanes, at a cost of $270,000</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20102"><a><span class="year">2010:</span> City Council votes to abolish vehicle registration tax*</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20102EX" style="display: none;">
+							  <p>City council votes on: putting a stop to Toronto's vehicle registration tax, and limit councillors' office budgets, the motions deliver on two of Mayor Rob Ford's election promises.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<dl class="timelineMinor">
+						  <dt id="20121"><a><span class="year">2010:</span> Transit City plan - abandoned*</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20121EX" style="display: none;">
+							  <p>Rob Ford stated “Transit city is over, ladies and gentleman”, adding “the war on the car stops today.”. Rob Ford unilaterally canceled (overstepping his authority) the under-construction Transit City plan.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20101"><a><span class="year">2010:</span> Rob Ford becomes Mayor of Toronto</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20101EX" style="display: none;">
+							  <p>Wins support in 32 out of 44 Toronto wards.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						
+						<dl class="timelineMinor">
+						  <dt id="20100"><a><span class="year">2010:</span> Rob Ford broke City Council's Code of Conduct</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20100EX" style="display: none;">
+							  <p>City of Toronto's Integrity Commissioner Janet Leiper ruled that Councillor Rob Ford had not followed City Council's Code of Conduct. The ruling confirmed that Ford abused his council position in his fund-raising efforts. The commissioner noted that donors had included lobbyists, clients of lobbyists, and a corporation which did business with the City of Toronto.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+									
+					  </div><!-- end timelineMajor 2010-2014-->
+  
+					  
+					  <br class="clear">
+						<div class="timelineMajor">
+						<h2 class="timelineMajorMarker"><span>2006-1997</span></h2>
+	
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20061"><a><span class="year">2006:</span> Rob Ford's fourth election campaign, Ward 2.</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20061EX" style="display: none;">
+							  <p>Rob Ford maintains council seat in Ward 2 (Etobicoke North), re-elected with 66% of the vote.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20031"><a><span class="year">2003:</span> Rob Ford's third election campaign, Ward 2.</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20031EX" style="display: none;">
+							  <p>Rob Ford maintains council seat in Ward 2 (Etobicoke North), re-elected with 80% of the vote.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<!-- timeline minor start-->
+						<dl class="timelineMinor">
+						  <dt id="20001"><a><span class="year">2000:</span> Rob Ford's second election campaign, Ward 2.</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="20001EX" style="display: none;">
+							  <p>Rob Ford defeats the incumbent in Ward 2 (Etobicoke North), becomes city council member.</p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+						<dl class="timelineMinor">
+						  <dt id="19971"><a><span class="year">1997:</span> Rob Ford's first election campaign, Ward 3.</a></dt>
+						  <!-- hidden content start = dd tag-->
+							<dd class="timelineEvent" id="19971EX" style="display: none;">
+							  <p>Rob Ford runs for election, places fourth to Gloria Lindsay Luby in Ward 3 (Kingsway-Humber) </p>
+							  <br class="clear">
+							</dd> <!-- hidden content end -->
+						</dl>
+						
+					  </div><!--end timelineMajor 1997-2006-->
+					  <br class="clear">
+					</div> <!-- timline container id end-->
+
+					<!--END OF TIMELINE-->
+				<div class="arrow" id="timelinearrow">
+				</div>
+				
+			</div>
+			
+			
+			<div class="collapsed" id="bio">
+				<div class="sectionhead" id="biohead">
+					FORD FACTS
+				</div>
+				
+				<div class="content" style="color:white; padding-bottom:50px;">
+					<span class="year">Name:</span><br/>
+					Robert Bruce "Rob" Ford
+					<br/><br/>
+					<span class="year">Born:</span><br/>
+					May 28, 1969
+					<br/><br/>
+					<span class="year">Political Summary:</span><br/>
+					First elected to Toronto City Council by winning the Ward 2 seat in 2000. Rob Ford was then subsequently re-elected twice in the same seat, and in 2010 became the 64th Mayor of Toronto. 
+					<br/><br/>
+					<span class="year">Personal Income:</span><br/>
+					(1)Public Sector Salary Disclosure for 2013: Municipalities and Services:
+					FORD,ROBERT	 Mayor	$175,325.18(salary paid)	$1,307.75(taxable benefits)
+					<br/><br/>
+					(2)Private, Deco Labels and Tags,: UNKNOWN, estimated $100 million in annual sales.
+					<br/><br/>
+					---Median Toronto Family income(2011):<br/>
+					69,740
+					<br/><br/>
+					<span class="year">Education:</span><br/>
+					High School Diploma 
+					<br/><br/>
+					---Toronto:<br/>
+					52% of the general population (15 years and over) in 2006 had 
+					completed a postsecondary education (university degree, post-secondary 
+					certificate or diploma). 
+				</div>
+				
+				<div class="arrow" id="bioarrow">
+				</div>
+			</div>
+			
+			
+			<div id="sm">
+				<div class="sectionhead" id="contacthead">
+					MEDIA
+				</div>
+			</div>
+			
+			
+			<div id="media">
+				<div class="sectionhead" id="contacthead">
+					CONTACT US
+				</div>
+			</div>
+			
+			<div id="adspace">
+				<div class="sectionhead" id="contacthead" style="color:black;">
+					ADVERTISEMENT
+				</div>
+			</div>
+			
+		</div>
+	<script src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="inc/colorbox.js"></script>
+  <script type="text/javascript" src="js/timeliner.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $.timeliner({
+      });
+
+      // Colorbox Modal
+      $(".CBmodal").colorbox({inline:true, initialWidth:100, maxWidth:682, initialHeight:100, transition:"elastic",speed:750});
+    });
+  </script>
+	</body>
+</html>
